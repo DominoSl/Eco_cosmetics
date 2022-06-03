@@ -1,0 +1,19 @@
+.page {
+  &__body {
+    background-color: $c-merino;
+
+    font-family: Poppins, sans-serif;
+  }
+
+  &__section {
+    margin-bottom: 100px;
+    
+    @include media-768 {
+      margin-bottom: 130px;
+    }
+    
+    @include media-1280 {
+      margin-bottom: 200px;
+    }
+  }
+}

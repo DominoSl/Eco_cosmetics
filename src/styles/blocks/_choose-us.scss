@@ -1,0 +1,21 @@
+.choose-us {
+
+  @include media-768 {
+    padding: 100px 0;
+  }
+
+  &__title {
+    color: $c-dark-green;
+    max-width: 380px;
+  }
+  
+  &__text {
+    max-width: 380px;
+    @extend %text;
+    display: none;
+    
+    @include media-768 {
+      display: block;
+    }
+  }
+}

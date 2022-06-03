@@ -1,0 +1,53 @@
+.icon {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--menu {
+    background-image: url(../images/icons/menu.svg);
+  }
+
+  &--cross {
+    background-image: url(../images/icons/cross.svg);
+  }
+  
+  &--bag {
+    background-image: url(../images/icons/bag.svg);
+  }
+  
+  &--car {
+    background-image: url(../images/icons/car.svg);
+  }
+  
+  &--card {
+    background-image: url(../images/icons/card.svg);
+  }
+  
+  &--duck {
+    background-image: url(../images/icons/duck.svg);
+  }
+  
+  &--leaf {
+    background-image: url(../images/icons/leaf.svg);
+  }
+  
+  &--leaves {
+    background-image: url(../images/icons/leaves.svg);
+  }
+  
+  &--recycle {
+    background-image: url(../images/icons/recycle.svg);
+  }
+  
+  &--facebook {
+    background-image: url(../images/icons/facebook.svg);
+  }
+  
+  &--insta {
+    background-image: url(../images/icons/insta.svg);
+  }
+}

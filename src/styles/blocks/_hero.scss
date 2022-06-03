@@ -1,0 +1,97 @@
+.hero {
+  padding-top: 60px;
+
+  @include media-768 {
+    padding-top: 78px;
+  }
+
+  @include media-1280 {
+    padding-top: 172px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include media-1280 {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+  
+  &__content {
+    grid-column: 2 / 7;
+  }
+  
+  &__image-wrap {
+    position: relative;
+    
+    margin: 0 -20px 25px;
+    
+    height: 47vh;
+    max-height: 500px;
+    overflow: hidden;
+    
+    @include media-768 {
+      margin: 0 0 50px;
+    }
+
+    @include media-1280 {
+      grid-column: 7 / 13;
+      min-height: 450px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    margin: 0 auto 10px;
+    
+    font-size: 24px;
+    text-align: center;
+    max-width: 468px;
+
+    @include media-768 {
+      font-size: 36px;
+    }
+
+    @include media-1280 {
+      font-size: 60px;
+      margin: 0 0 30px;
+      text-align: left;
+    }
+  }
+  
+  &__text {
+    @extend %text;
+    display: block;
+    max-width: 265px;
+    margin: 0 auto 30px;
+    
+    text-align: center;
+    
+    @include media-768 {
+      margin-bottom: 50px;
+    }
+
+    @include media-1280 {
+      margin: 0 0 50px;
+    }
+  }
+  
+  &__button {
+    margin: 0 auto;
+    
+    @include media-1280 {
+      margin: 0;
+      max-width: 280px;
+    }
+  }
+}

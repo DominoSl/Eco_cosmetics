@@ -1,0 +1,36 @@
+.shop {
+  &__title {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  &__tabs {
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tab {
+    cursor: pointer;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid transparent;
+
+    @extend %text-2;
+    color: $c-gray;
+
+    transition: color $t-fast, transform $t-fast;
+
+    &:hover {
+      color: $c-black;
+      transform: scale(1.05);
+    }
+
+    &--active {
+      border-color: $c-black;
+    }
+  }
+}

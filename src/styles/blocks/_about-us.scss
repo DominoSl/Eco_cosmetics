@@ -1,0 +1,13 @@
+.about-us {
+  &__title {
+    margin-bottom: 10px;
+
+    color: $c-dark-green;
+  }
+
+  &__text {
+    @extend %small-text;
+
+    margin-bottom: 30px;
+  }
+}

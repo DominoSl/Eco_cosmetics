@@ -4,3 +4,15 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin media-768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-1280 {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

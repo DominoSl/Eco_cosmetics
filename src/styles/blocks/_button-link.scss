@@ -1,0 +1,14 @@
+.button-link {
+  @extend %decor-text;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  
+  color: $c-dark-green;
+
+  transition: border-color $t-slow;
+
+  &:hover {
+    border-color: $c-dark-green;
+  }
+}

@@ -1,7 +1,22 @@
 @import "utils";
-@import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+@import "./blocks/grid";
+@import "./blocks/page";
+@import "./blocks/wrap";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/icon";
+@import "./blocks/logo";
+@import "./blocks/link";
+@import "./blocks/button";
+@import "./blocks/button-link";
+@import "./blocks/top-block";
+@import "./blocks/choose-us";
+@import "./blocks/about-us";
+@import "./blocks/shop";
+@import "./blocks/product";
+
+[hidden] {
+  display: none;
 }
